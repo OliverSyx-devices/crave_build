@@ -34,7 +34,7 @@ echo "=================="
 . build/envsetup.sh
 
 # Lunch
-lunch spark_mojito-user
+lunch spark_mojito-userdebug
 
 # Make cleaninstall
 make installclean
