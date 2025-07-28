@@ -5,7 +5,7 @@ pd sh ubuntu -- crave -n devspace
 ```
 
 ```bash
-crave run --no-patch -- "curl https://raw.githubusercontent.com/OliverSyx/crave_build/refs/heads/spark/build.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/OliverSyx/crave_build/refs/heads/blueos/build.sh | bash"
 ```
 
 Install crave 
