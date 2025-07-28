@@ -11,10 +11,10 @@ echo "Remove LOCAL MANIFEST success"
 echo "=================="
 
 # Rom source repo
-repo init -u https://github.com/SparkOS-Next/manifest -b pyro-next
+repo init -u https://github.com/BlueOS/android.git -b lineage-20.0 --git-lfs
 
 # Local
-git clone -b spark https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
+git clone -b blueos https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
@@ -34,7 +34,7 @@ echo "=================="
 . build/envsetup.sh
 
 # Lunch
-lunch spark_mojito-userdebug
+brunch mojito userdebug
 
 # Make cleaninstall
 make installclean
