@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
+rm -rf external/chromium-webview
 rm -rf device/xiaomi/mojito
 rm -rf vendor/xiaomi/mojito
 rm -rf kernel/xiaomi/mojito
