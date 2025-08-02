@@ -36,6 +36,3 @@ echo "=================="
 
 # Lunch
 brunch mojito userdebug
-
-# Make cleaninstall
-make installclean
