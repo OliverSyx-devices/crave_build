@@ -39,6 +39,3 @@ brunch mojito userdebug
 
 # Make cleaninstall
 make installclean
-
-# Build rom
-mka bacon
