@@ -12,10 +12,10 @@ echo "Remove LOCAL MANIFEST success"
 echo "=================="
 
 # Rom source repo
-repo init -u https://github.com/BlueOS/android.git -b lineage-20.0 --git-lfs
+repo init -u https://github.com/OLV-AOSP/manifest.git -b QPR3
 
 # Local
-git clone -b blueos https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
+git clone -b superior https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
@@ -35,4 +35,7 @@ echo "=================="
 . build/envsetup.sh
 
 # Lunch
-brunch mojito userdebug
+lunch superior_mojito-userdebug
+
+# Mka
+mka bacon
