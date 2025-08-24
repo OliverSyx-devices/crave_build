@@ -10,7 +10,7 @@ echo "Remove LOCAL MANIFEST success"
 echo "=================="
 
 # Rom source repo
-repo init -u https://github.com/OLV-AOSP/manifest.git -b QPR3
+repo init -u https://github.com/Superior13-NEXT//manifest.git -b thirteen
 
 # Local
 git clone -b superior https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
