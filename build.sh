@@ -29,7 +29,7 @@ echo "=================="
 . build/envsetup.sh
 
 # Lunch
-lunch superior_mojito-userdebug
+lunch superior_mojito-user
 
 # Make cleaninstall
 make installclean
