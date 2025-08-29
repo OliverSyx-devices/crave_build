@@ -31,8 +31,5 @@ echo "=================="
 # Lunch
 lunch superior_mojito-user
 
-# Make cleaninstall
-make installclean
-
 # Mka
 mka bacon
