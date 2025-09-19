@@ -11,10 +11,10 @@ echo "Remove LOCAL MANIFEST success"
 echo "=================="
 
 # Rom source repo
-repo init -u https://github.com/Superior13-NEXT//manifest.git -b thirteen
+repo init -u https://github.com/RisingOS-XTI/manifest -b thirteen-1 --git-lfs
 
 # Local
-git clone -b superior https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
+git clone -b rising https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
@@ -36,7 +36,4 @@ echo "============================"
 . build/envsetup.sh
 
 # Lunch
-lunch superior_mojito-user
-
-# Mka
-mka bacon
+brunch lineage userdebug
