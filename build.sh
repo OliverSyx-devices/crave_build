@@ -36,4 +36,4 @@ echo "============================"
 . build/envsetup.sh
 
 # Lunch
-brunch lineage userdebug
+brunch mojito userdebug
