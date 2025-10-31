@@ -43,4 +43,4 @@ echo "============================"
 . build/envsetup.sh
 
 # Lunch
-brunch mojito userdebug
+brunch mojito user
