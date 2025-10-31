@@ -10,8 +10,15 @@ echo "=================="
 echo "Remove LOCAL MANIFEST success"
 echo "=================="
 
+# Symlink libncurses 6 >> 5
+sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 /usr/lib/x86_64-linux-gnu/libncurses.so.5
+sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.6   /usr/lib/x86_64-linux-gnu/libtinfo.so.5
+echo "============="
+echo "lib6 >> lib5  "
+echo "============="
+
 # Rom source repo
-repo init -u https://github.com/RisingOS-XTI/manifest -b thirteen-1 --git-lfs
+repo init -u https://github.com/RisingOS-XTI/manifest -b thirteen --git-lfs
 
 # Local
 git clone -b rising https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
