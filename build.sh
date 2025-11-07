@@ -18,10 +18,10 @@ echo "lib6 >> lib5  "
 echo "============="
 
 # Rom source repo
-repo init -u https://github.com/RisingOS-XTI/manifest -b thirteen --git-lfs
+repo init -u https://github.com/AwakenOS/android_manifest -b triton --git-lfs
 
 # Local
-git clone -b rising https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
+git clone -b awaken https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
