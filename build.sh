@@ -43,4 +43,7 @@ echo "============================"
 . build/envsetup.sh
 
 # Lunch
-brunch mojito user
+lunch awaken_mojito-user
+
+# bacon
+make bacon
