@@ -21,7 +21,7 @@ echo "============="
 repo init -u https://github.com/AwakenOS/android_manifest -b triton --git-lfs
 
 # Local
-git clone -b awaken https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
+git clone -b awaken https://github.com/OliverSyx-devices/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
