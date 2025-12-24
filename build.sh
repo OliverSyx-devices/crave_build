@@ -1,17 +1,17 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
-rm -rf device_xiaomi_miuicamera-marble
-rm -rf device_xiaomi_marble
-rm -rf device_xiaomi_sm8450-common
-rm -rf hardware_dolby
-rm -rf hardware_xiaomi
-rm -rf kernel_xiaomi_sm8450
-rm -rf kernel_xiaomi_sm8450-modules
-rm -rf kernel_xiaomi_sm8450-devicetrees
-rm -rf vendor_xiaomi_marble
-rm -rf vendor_xiaomi_sm8450-common
-rm -rf vendor_private_keys
+rm -rf device/xiaomi/miuicamera-marble
+rm -rf device/xiaomi/marble
+rm -rf device/xiaomi/sm8450-common
+rm -rf hardware/dolby
+rm -rf hardware/xiaomi
+rm -rf kernel/xiaomi/sm8450
+rm -rf kernel/xiaomi/sm8450-modules
+rm -rf kernel/xiaomi/sm8450-devicetrees
+rm -rf vendor/xiaomi/marble
+rm -rf vendor/xiaomi/sm8450-common
+rm -rf vendor/private/keys
 echo "=================="
 echo "Remove LOCAL MANIFEST success"
 echo "=================="
@@ -35,4 +35,4 @@ echo "=================="
 . build/envsetup.sh
 
 # Lunch
-brunch mojito user
+brunch marble userdebug
