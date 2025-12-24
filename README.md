@@ -5,7 +5,7 @@ pd sh ubuntu -- crave -n devspace
 ```
 
 ```bash
-crave run --no-patch -- "curl https://raw.githubusercontent.com/OliverSyx-devices/crave_build/refs/heads/awaken/build.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/OliverSyx-devices/crave_build/refs/heads/marble/build.sh | bash"
 ```
 
 Install crave 
