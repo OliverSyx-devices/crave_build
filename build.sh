@@ -1,31 +1,29 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
-rm -rf device/xiaomi/mojito
-rm -rf vendor/xiaomi/mojito
-rm -rf kernel/xiaomi/mojito
-rm -rf vendor/private/keys
-rm -rf vendor/xiaomi/mojito-leicacamera
+rm -rf device_xiaomi_miuicamera-marble
+rm -rf device_xiaomi_marble
+rm -rf device_xiaomi_sm8450-common
+rm -rf hardware_dolby
+rm -rf hardware_xiaomi
+rm -rf kernel_xiaomi_sm8450
+rm -rf kernel_xiaomi_sm8450-modules
+rm -rf kernel_xiaomi_sm8450-devicetrees
+rm -rf vendor_xiaomi_marble
+rm -rf vendor_xiaomi_sm8450-common
+rm -rf vendor_private_keys
 echo "=================="
 echo "Remove LOCAL MANIFEST success"
 echo "=================="
 
-# Symlink libncurses 6 >> 5
-sudo ln -s /usr/lib/x86_64-linux-gnu/libncurses.so.6 /usr/lib/x86_64-linux-gnu/libncurses.so.5
-sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.6   /usr/lib/x86_64-linux-gnu/libtinfo.so.5
-echo "============="
-echo "lib6 >> lib5  "
-echo "============="
-
 # Rom source repo
-repo init -u https://github.com/AwakenOS/android_manifest -b triton --git-lfs
+repo init -u https://github.com/LineageOS/android.git -b lineage-23.0 --git-lfs
 
 # Local
-git clone -b awaken https://github.com/OliverSyx-devices/local_manifests.git .repo/local_manifests
+git clone -b marble https://github.com/OliverSyx-devices/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
-
 
 # Sync the repositories
 /opt/crave/resync.sh
@@ -33,17 +31,8 @@ echo "=================="
 echo "Repo SYNC success"
 echo "=================="
 
-# Leica
-git clone --depth=1 https://gitlab.com/pnplusplus/android_vendor_xiaomi_mojito-leicacamera vendor/xiaomi/mojito-leicacamera
-echo "============================"
-echo "Clone LEICA success"
-echo "============================"
-
 # Set up build environment
 . build/envsetup.sh
 
 # Lunch
-lunch awaken_mojito-user
-
-# bacon
-make bacon
+brunch mojito user
