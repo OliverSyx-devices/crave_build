@@ -18,10 +18,10 @@ echo "lib6 >> lib5  "
 echo "============="
 
 # Rom source repo
-repo init -u https://github.com/AwakenOS/android_manifest -b triton --git-lfs
+repo init -u https://github.com/Rising-LTS/android -b thirteen --git-lfs
 
 # Local
-git clone -b awaken https://github.com/OliverSyx-devices/local_manifests.git .repo/local_manifests
+git clone -b rs https://github.com/OliverSyx-devices/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
@@ -43,7 +43,7 @@ echo "============================"
 . build/envsetup.sh
 
 # Lunch
-lunch awaken_mojito-user
+lunch lineage_mojito-userdebug
 
 # bacon
-make bacon
+mka bacon
